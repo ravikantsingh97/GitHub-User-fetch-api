@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-block {
+    background-color: black;
+}
+
+.main-block article {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vw;
+    justify-content: center;
+    padding: 2vw;
+}
+
+.card {
+    display: block;
+    border-radius: 1vw;
+    background-image: linear-gradient(45deg,yellow,green);
+    padding: 0.5vw;
+    transition: all 0.5s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card img{
+    border-radius: 1vw;
+    width: 20vw;
+}
+
+.card h2{
+    text-align: center;
+    text-transform: capitalize;
+    padding: 1vw;
+    font-size: 3vw;
+}
+
+.card a{
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: aliceblue;
+    display: block;
+    border-radius: 0.5vw;
+    text-align: center;
+    padding: 0.5vw;
+    background-color: rgba(255, 0, 0, 0.679);
+    
+}
+
+.card a:hover{
+    background-color: rgb(71, 0, 0);
+}
+
+
+@media screen and (min-width : 320px){
+    .card img{
+        border-radius: 0.5vw;
+        width: 80vw;
+        gap: 100vh;
+    }
+    .main-block article {
+        
+        gap: 10vw;
+       
+    }
+    
+}
+@media screen and (max-width : 320px){
+    .card img{
+        border-radius: 0.5vw;
+        width: 80vw;
+        gap: 100vh;
+    }
+    .main-block article {
+        
+        gap: 10vw;
+       
+    }
+    
+}
+
+
+@media screen and (min-width : 500px){
+    .card img{
+        border-radius: 0.5vw;
+        width: 40vw;
+    }
+    
+}
+@media screen and (min-width : 960px){
+    .card img{
+        border-radius: 0.5vw;
+        width: 20vw;
+    }
+    
+}
